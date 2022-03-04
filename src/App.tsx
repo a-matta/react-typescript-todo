@@ -9,7 +9,7 @@ const App: React.FC = () => {
   const todos = [{ id: "t1", text: "walk 10 kms" }];
   return (
     <div className="App">
-      <NewTodo />
+      <NewTodo onAddTodo={todoAddHandler} />
       <TodoList items={todos} />
     </div>
   );
